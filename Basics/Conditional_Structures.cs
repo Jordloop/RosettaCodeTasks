@@ -19,9 +19,13 @@ class Program
         {
             Console.WriteLine("Condition evaluated true.");
         }
+        else if (1 == 3) // this line of code causes a warning because this condition will never evaluate as true.
+        {
+            Console.WriteLine("That is impossible.");
+        }
         else
         {
-            Console.WriteLine("Condition evaluated false.");
+            Console.WriteLine("Condition evaluated false");
         }
 
 // ternary opperator
