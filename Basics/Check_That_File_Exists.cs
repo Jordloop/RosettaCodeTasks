@@ -9,10 +9,14 @@
 
 //   http://www.rosettacode.org/wiki/Check_that_file_exists
 
-class Project
+using System;
+using System.IO;
+
+class Program
 {
     static void Main()
     {
-        
+        Console.WriteLine(File.Exists("Check_that_file_exists.cs"));
+        Console.WriteLine(Directory.Exists("../Basics"));
     }
 }
